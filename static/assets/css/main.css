@@ -25,9 +25,130 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+
+
+	
+
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+
+	section.carousel {
+		width:50vw;
+		min-width:auto;
+		max-width:auto;
+		margin:auto;
+		display:flex;
+	  }
+	section.carousel button {
+	border:none;
+	border-radius:0;
+	outline:none;
+	width:auto;
+	height: auto;
+	/*background:white;*/
+	transition:all 0.2s;
+
+	color: black;
+	}
+	section.carousel button:disabled {
+	opacity:0.5;
+	}
+	section.carousel button:not(:disabled):hover {
+	cursor:pointer;
+	opacity:0.85;
+	}
+
+	
+	section.carousel .images {
+	position:relative;
+	flex:1;
+	}
+	section.carousel .images img {
+	display:none;
+	width:100%;
+	height:auto;
+	}
+	section.carousel .images img.current {
+	display:block;
+	}
+
+	
+	.dashboard-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		background-color: #46495200;
+		height: 45vh;
+	}
+	
+	.box-container {
+		display: flex;
+		gap: 5px;
+	}
+	
+	.box {
+				background-color: #2e3141;
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+				background-size: auto,
+				cover;
+				background-attachment: fixed,
+				fixed;
+				background-position: center,
+				center;
+
+		background-color: #2a1a64;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		padding: 20px;
+		width: 70%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		transition: transform 0.3s ease;
+	}
+	
+	.box:hover {
+		transform: translateY(-10px);
+	}
+	
+	.text {
+		margin-bottom: 15px;
+	}
+	
+	.topic-heading {
+		font-size: 1em;
+		color: #ffffff;
+		margin: 0;
+	}
+	
+	.topic {
+		font-size: 1em;
+		color: #ffffff;
+	}
+	
+	.box img {
+		width: 60px;
+		height: auto;
+	}
+	
+	/* Responsive Design */
+	@media (max-width: 768px) {
+		.box-container {
+			flex-direction: column;
+			gap: 15px;
+		}
+	
+		.box {
+			width: 100%;
+		}
+	}
+
+
+
 
 body {
 	line-height: 1;
@@ -44,6 +165,7 @@ blockquote, q {
 	blockquote:before, blockquote:after, q:before, q:after {
 		content: '';
 		content: none;
+
 	}
 
 table {
@@ -86,6 +208,8 @@ input, select, textarea {
 
 		html, body {
 			min-width: 320px;
+			width: 100%;
+            height: 100%;
 		}
 
 	}
@@ -323,6 +447,7 @@ input, select, textarea {
 		font-style: italic;
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 2em;
+		font-size: 1.5em;
 	}
 
 	code {
@@ -3549,16 +3674,17 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper > header {
-		padding: 11em 0 2.25em 0 ;
+		padding: 1em 0 0 0 ;
 	}
 
 		#wrapper > header .inner {
 			margin: 0 auto;
 			width: 55em;
+
 		}
 
 		#wrapper > header h2 {
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			border-bottom: solid 2px rgba(59, 13, 212, 0.96);
 			font-size: 2em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;

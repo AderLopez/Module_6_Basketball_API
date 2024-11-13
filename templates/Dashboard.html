@@ -1,0 +1,239 @@
+<!-- Using a downloaded template the information from the template is below-->
+
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+
+	<!-- Creating the head on HTML -->
+	<head>
+		<title>Module 6: Basketball API</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+	</head>
+		
+	<style>
+		/* Add a top margin to the image */
+		img {
+		margin-top: 70px;  /* Adjust the value to your preference */
+		}
+
+
+
+		/* Apply some basic styles */
+		body, html {
+		  margin: 0;
+		  padding: 0;
+		  height: 100%;
+		  display: grid;
+		  place-items: center;
+		}
+
+
+		/* Grid layout for the sections */
+		.container {
+		  display: grid;
+		  grid-template-rows: 1fr 1fr 1fr;
+		  height: 100vh;
+		  width: 100%;
+		}
+		/* Each section styling */
+		.section {
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  font-size: 2em;
+		  color: white;
+		}
+		/* Set individual colors */
+		.section-1 { background-color: #ff5733; }
+		.section-2 { background-color: #33c1ff; }
+		.section-3 { background-color: #85e085; }
+	
+		/* Responsive: make sections side by side on large screens */
+		@media (min-width: 768px) {
+		  .container {
+			grid-template-rows: 1fr;
+			grid-template-columns: 1fr 1fr 1fr;
+		  }
+		}
+	  </style>
+
+
+
+
+
+	<!-- Creating the Body on HTML -->
+	<body class="is-preload">
+		
+
+		<section>
+
+
+			
+			<center>
+				<div>														
+					<style>
+						.resized-image {
+							width: auto;   /* Resize as needed */
+							height: 100px;   /* Maintain aspect ratio */
+						}
+					</style>
+				
+					<img src="static/images/NBA.jpg" alt="NBA" class="resized-image">
+					<img src="static/images/NBA.jpg" alt="NBA" class="resized-image">
+					<img src="static/images/NBA.jpg" alt="NBA" class="resized-image">
+					<img src="static/images/NBA.jpg" alt="NBA" class="resized-image">
+					<img src="static/images/NBA.jpg" alt="NBA" class="resized-image">
+					<img src="static/images/NBA.jpg" alt="NBA" class="resized-image">
+				</div>
+			</center>
+		</section>
+
+		<section id="wrapper">
+			<header>
+				<div class="inner">
+					<h2>NBA - Information</h2>
+					<p>The information published here was obtained from: https://app.balldontlie.io/</p>
+				</div>
+			</header>
+
+
+
+		<!-- Section for Dashboard -->
+		<section>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="./" >NBA  - Basketball Dashboard</a></h1>
+					</header>
+
+				<!-- Wrapper -->
+				<!-- This section states the information of the Cryptocurrency -->
+					<section id="wrapper">
+						<center>								
+							<section>
+								<!--Uploading the Graph for Trade Volume vs Transaction Volume Ratio -->
+								<div class="dashboard-container">
+										<div class="box-container">
+											<!-- Box 1 -->
+											<div class="box">
+												<div class="text">
+													<h2 class="topic-heading">Rate BTC: {{Current_rate_BTC}}</h2>
+													<h2 class="topic">Current Bitcoin Info</h2>
+												</div>
+												<img src="static/images/bitcoin.webp" alt="likes">
+											</div>
+
+											<!-- Box 2 -->
+											<div class="box">
+												<div class="text">
+													<h2 class="topic-heading">Date: {{Current_date}}</h2>
+													<h2 class="topic">Current Bitcoin Info</h2>
+												</div>
+												<img src="static/images/bitcoin.webp" alt="likes">
+											</div>
+										</div>
+								</div>
+
+								<!-- Section for images of NBA -->
+								<section class="carousel">
+									<button class="prev" disabled>◀</button>
+									<div class="images">
+									<img src="https://picsum.photos/id/10/600/400" class="current"/>
+									<img src="https://picsum.photos/id/20/600/400"/>
+									<img src="https://picsum.photos/id/30/600/400"/>
+									<img src="https://picsum.photos/id/40/600/400"/>
+									</div>
+									<button class="next">▶</button>
+								</section>
+
+								<div>
+										<h2>Bitcoin Trade Volume vs Transaction Volume Ratio </h2>
+										&nbsp
+											<section>
+												<h3>Graph Information</h3>
+												<blockquote>The following information was obtained from: https://data.nasdaq.com/databases/BCHAIN <br>
+												The data considers the Bitcoin Trade vs The ratio of transaction volume of the last seven days from the data available.</blockquote>			
+												<blockquote>"This data feed provides key metrics to understand Bitcoin's market dynamics, transaction volumes, and network performance. This data feed provides daily market prices, mining statistics, and more. Explore daily snapshots of Bitcoin's journey, from market trends to network activity to stay informed and make data-driven decisions in the world of cryptocurrency."</blockquote>					
+											<section>
+											<object data="static/Bitcoin_Trade_vs_Transaction_volume_Ratio.svg" type="image/svg+xml" width="80%";border:1px solid #ccc;"></object>
+								</div>
+								
+								
+										<!--Uploading the Graph for Trade Volume vs Transaction Volume Ratio -->
+										<div class="dashboard-container">
+											<div class="box-container">
+												<!-- Box 1 -->
+												<div class="box">
+													<div class="text">
+														<h2 class="topic-heading">Rate USD/YEN: {{Current_rate_JPY}}</h2>
+														<h2 class="topic">Current YEN Info</h2>
+													</div>
+													<img src="static/images/YEN.png" alt="likes">
+												</div>
+
+												<!-- Box 2 -->
+												<div class="box">
+													<div class="text">
+														<h2 class="topic-heading">Date: {{Current_date}}</h2>
+														<h2 class="topic">Current YEN Info</h2>
+													</div>
+													<img src="static/images/YEN.png" alt="likes">
+												</div>
+
+											</div>
+									</div>
+
+							
+								<div>
+									&nbsp
+									<h2>Peru Unemployment Information for period 2000 - 2024</h2>
+									&nbsp
+										<section>
+											<h3>Graph Information</h3>
+											<blockquote>The following information was obtained from: https://data.nasdaq.com/databases/ODA<br>
+											The data considers the Level of Unemployment in Peru During the years 2000 - 2024</blockquote>		
+											<blockquote>"Open global data of key economic indicators from the World Economic Outlook database sourced directly from the IMF website."</blockquote>									
+	
+										<section>
+										<object data="static/Peru_unemployment.svg" type="image/svg+xml" width="80%" ;border:1px solid #ccc;"></object>
+								</div>
+
+
+
+							</section>
+						</center>
+
+						<header>
+
+						</header>
+						
+					
+			</div>
+
+
+		<div class="container">
+			<div class="section section-1">Section 1</div>
+			<div class="section section-2">Section 2</div>
+			<div class="section section-3">Section 3</div>
+			</div>
+		</section>
+		<!-- Calling the Scripts provided from the template -->
+			   
+		<script src="static/assets/js/jquery.min.js"></script>
+		<script src="static/assets/js/jquery.scrollex.min.js"></script>
+		<script src="static/assets/js/browser.min.js"></script>
+		<script src="static/assets/js/breakpoints.min.js"></script>
+		<script src="static/assets/js/util.js"></script>
+		<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>
