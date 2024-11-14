@@ -35,29 +35,18 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 	section.carousel {
-		width:50vw;
-		height: 30vw;
-		min-width:auto;
-		max-width:auto;
+		width:100%;
+		height: 100%;
 		margin:auto;
 		display:flex;
-		justify-content: center; /* Align the content (button and image) horizontally */
-		align-items: center; /* Align the content (button and image) vertically */
-
-	  
-	  }
-	  section.carousel {
-		width:50vw;
-		min-width:300px;
-		max-width:600px;
-		margin:auto;
-		display:flex;
+		align-items: center;
+		justify-content: center;
 	  }
 	  section.carousel button {
 		border:none;
 		border-radius:0;
 		outline:none;
-		width:2rem;
+		width:auto;
 		/*background:white;*/
 		transition:all 0.2s;
 	  }
@@ -69,24 +58,34 @@ footer, header, hgroup, menu, nav, section {
 		opacity:0.85;
 	  }
 	  section.carousel .images {
-		position:relative;
-		flex:1;
+		position:relative;	
+		align-items: center;	
+		width:100%;
+		height:100%;
 	  }
 	  section.carousel .images img {
 		display:none;
+		align-items: center;
 		width:100%;
-		height:auto;
+		height:100%;
+		object-fit: cover;
 	  }
 	  section.carousel .images img.current {
 		display:block;
-	  }
 
-	
+	}
+
+	.centered-text {
+		text-align: center;
+	}
+
+
+
 	.dashboard-container {
 		/*display: flex; */
 		justify-content: center;
 		align-items: center;
-		padding: 20px;
+		padding: 0px;
 		background-color: #46495200;
 		height: 45vh;
 	}
@@ -98,7 +97,7 @@ footer, header, hgroup, menu, nav, section {
 	
 	.box {
 				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+				background-image: linear-gradient(to top, rgba(202, 12, 6, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
 				background-size: auto;
 				background-attachment: fixed;
 				background-position: center;
@@ -106,7 +105,7 @@ footer, header, hgroup, menu, nav, section {
 
 		background-color: #2a1a64;
 		border-radius: 2px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 2px 2px rgba(27, 20, 163, 0.792);
 		padding: 20px;
 		width: 70%;
 		text-align: center;

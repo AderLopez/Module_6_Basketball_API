@@ -19,13 +19,6 @@
 	</head>
 		
 	<style>
-		/* Add a top margin to the image */
-		img {
-		margin-top: 70px;  /* Adjust the value to your preference */
-		}
-
-
-
 		/* Apply some basic styles */
 		body, html {
 		  margin: 0;
@@ -71,7 +64,11 @@
 
 	<!-- Creating the Body on HTML -->
 	<body class="is-preload">
-		
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="./" >NBA  - Basketball Dashboard</a></h1>
+		</header>
 
 		<section>
 			<center>
@@ -80,9 +77,11 @@
 						.resized-image {
 							width: auto;   /* Resize as needed */
 							height: 100px;
+									/* Add a top margin to the image */
 						}
+
 					</style>
-				
+					<br><br><br>
 					<img src="static/images/NBA.jpg" alt="NBA" class="resized-image">
 					<img src="static/images/NBA.jpg" alt="NBA" class="resized-image">
 					<img src="static/images/NBA.jpg" alt="NBA" class="resized-image">
@@ -104,13 +103,7 @@
 
 
 		<!-- Section for Dashboard -->
-		<section id = "wrapper">
-
-			<!-- Header -->
-			<header id="header">
-				<h1><a href="./" >NBA  - Basketball Dashboard</a></h1>
-			</header>
-
+		<section>
 			<!-- Wrapper -->
 			<!-- This section states the information of the Cryptocurrency -->							
 					<!--Uploading the Graph for Trade Volume vs Transaction Volume Ratio -->
@@ -122,86 +115,90 @@
 										<h2 class="topic-heading">TEAMS</h2>
 										<h2 class="topic">{{teams_number}}</h2>
 									</div>
-									<img src="static/images/bitcoin.webp" alt="likes">
+									<img src="static/images/teams.jpg" alt="likes">
 								</div>
+
 
 								<!-- Box 2 -->
-								<div class="box">
-									<div class="text">
-										<h2 class="topic-heading">Players</h2>
-										<h2 class="topic">{{players_number}}</h2>
-									</div>
-									<img src="static/images/bitcoin.webp" alt="likes">
-								</div>
-
-								<!-- Box 3 -->
 								<div class="box">
 									<div class="text">
 										<h2 class="topic-heading">Most players are from</h2>
 										<h2 class="topic">{{Highest_country_provider}}</h2>
 									</div>
-									<img src="static/images/bitcoin.webp" alt="likes">
+									<img src="static/images/USA.jpg" alt="likes">
 								</div>
 
-								<!-- Box 4 -->
+								<!-- Box 3 -->
 								<div class="box">
 									<div class="text">
 										<h2 class="topic-heading">Tallest Player</h2>
 										<h2 class="topic">{{tallest_player}}</h2>
 									</div>
-									<img src="static/images/bitcoin.webp" alt="likes">
+									<img src="static/images/Tall.jpg" alt="likes">
 								</div>
 
-								<!-- Box 5 -->
+								<!-- Box 4 -->
 								<div class="box">
 									<div class="text">
 										<h2 class="topic-heading">Greatest height </h2>
 										<h2 class="topic">{{highest_height}} cm</h2>
 									</div>
-									<img src="static/images/bitcoin.webp" alt="likes">
+									<img src="static/images/Greatest.gif" alt="likes">
 								</div>
+								
+								<!-- Box 5 -->
+								<div class="box">
+									<div class="text">
+										<h2 class="topic-heading">Players</h2>
+										<h2 class="topic">{{players_number}}</h2>
+									</div>
+									<img src="static/images/players.jpg" alt="likes">
+								</div>
+
+
 
 							</div>
 					</div>
 
 		</section>
-		<br><br><br>
+
+
+
+
 		<section>
-	
 			<!-- Section for images of NBA -->
-			<div>
-				<center>
-				<h2>GRAPHICAL INFORMATION</h2>	
-				<p>"The following information shows a histogram for Height and Weight"</p>						
-				</center>
-			</div>
-
-
-			<div>
+			<div class="centered-text">
+				<h2>GRAPHICAL INFORMATION 1 MATPLOT</h2>	
+				<p>"The following information shows a histogram for Height and Weight"<br>
+					The graphs were generated using matplot library.<br> In order to change images, please click on the arrows:</p>
 				<section class="carousel">
-
-
 					<button class="prev" disabled>◀</button>
 					<div class="images">
-					<img src="static/images/Weight Distribution.png" class="current"/>
-					<img src="static/images/Height Distribution.png"/ >
+					<img src="static/images/Weight Distribution.svg" class="current"/>
+					<img src="static/images/Height Distribution.svg"/ >
+					<img src="static/images/Players per country.svg"/ >
 					</div>
 					<button class="next">▶</button>
 				</section>
 			</div>
+		</section>		
+
+
+		<section>
+			<div class="centered-text">
+				<h2>GRAPHICAL INFORMATION 2 PYGAL</h2>	
+				<p>"The following information shows a bar chart counting the players per Country" <br> The graphs were generated using Pygal library.</p>
+				<div>
+					<object data="static/images/Players per country_bar_pygal.svg" type="image/svg+xml" style="display: inline-block; width="30%";border:1px solid #ccc;"></object>
+					</div>
+			</div>
 		</section>
 
-		<section>		
+		<section>
+			<img src="static/images/Logo.jpg" height=100% width=100%>
+		</section>
 
-			<div>
-				<object data="static/Bitcoin_Trade_vs_Transaction_volume_Ratio.svg" type="image/svg+xml" width="80%";border:1px solid #ccc;"></object>
-			</div>
-
-			<div class="container">
-				<div class="section section-1">Section 1</div>
-				<div class="section section-2">Section 2</div>
-				<div class="section section-3">Section 3</div>
-			</div>
+		<section>
 
 			<!-- Calling the Scripts provided from the template -->
 				
@@ -211,6 +208,6 @@
 			<script src="static/assets/js/breakpoints.min.js"></script>
 			<script src="static/assets/js/util.js"></script>
 			<script src="static/assets/js/main.js"></script>
-		<section>	
+		</section>	
 	</body>
 </html>
