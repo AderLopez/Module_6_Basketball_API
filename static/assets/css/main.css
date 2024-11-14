@@ -36,6 +36,7 @@ footer, header, hgroup, menu, nav, section {
 
 	section.carousel {
 		width:50vw;
+		height: 30vw;
 		min-width:auto;
 		max-width:auto;
 		margin:auto;
@@ -46,7 +47,7 @@ footer, header, hgroup, menu, nav, section {
 	border-radius:0;
 	outline:none;
 	width:auto;
-	height: auto;
+	height: 30vw;
 	/*background:white;*/
 	transition:all 0.2s;
 
@@ -118,13 +119,13 @@ footer, header, hgroup, menu, nav, section {
 	}
 	
 	.topic-heading {
-		font-size: 0.7em;
+		font-size: 1.5em;
 		color: #ffffff;
 		margin: 0;
 	}
 	
 	.topic {
-		font-size: 0.7em;
+		font-size: 1em;
 		color: #ffffff;
 	}
 	
