@@ -92,15 +92,13 @@ footer, header, hgroup, menu, nav, section {
 	.box {
 				background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-				background-size: auto,
-				cover;
-				background-attachment: fixed,
-				fixed;
-				background-position: center,
-				center;
+				background-size: auto;
+				background-attachment: fixed;
+				background-position: center;
+
 
 		background-color: #2a1a64;
-		border-radius: 10px;
+		border-radius: 2px;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		padding: 20px;
 		width: 70%;
@@ -116,17 +114,17 @@ footer, header, hgroup, menu, nav, section {
 	}
 	
 	.text {
-		margin-bottom: 15px;
+		margin-bottom: 5px;
 	}
 	
 	.topic-heading {
-		font-size: 1em;
+		font-size: 0.7em;
 		color: #ffffff;
 		margin: 0;
 	}
 	
 	.topic {
-		font-size: 1em;
+		font-size: 0.7em;
 		color: #ffffff;
 	}
 	
@@ -372,6 +370,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		color: #ffffff;
 	}
 
 	h1, h2, h3, h4, h5, h6 {

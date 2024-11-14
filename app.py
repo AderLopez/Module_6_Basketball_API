@@ -18,8 +18,8 @@ app = Flask(__name__, template_folder='templates')
 #Calling the index.html that will be the home page.
 @app.route('/', methods=['POST','GET'])
 def Index():
-    nba.all_teams()
-
+    #nba.all_teams()
+    nba.stats()
     #current_rate_btc,current_rate_jpy, current_date = Crytocurrency.Bitcoin_rate()
     #return render_template("Module_5_currency.html",Current_date = current_date, Current_rate_BTC = current_rate_btc, Current_rate_JPY = current_rate_jpy )
     return render_template("Dashboard.html" )
