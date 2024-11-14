@@ -82,17 +82,20 @@ footer, header, hgroup, menu, nav, section {
 
 
 	.dashboard-container {
-		/*display: flex; */
+		display: flex;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start; ;
 		padding: 0px;
 		background-color: #46495200;
 		height: 45vh;
+		position: relative;  /* Keeps content within its own section */
+		overflow: hidden;  /* Prevents overflow from the container */
 	}
 	
 	.box-container {
 		display: flex;
 		gap: 5px;
+		flex-wrap: wrap;
 	}
 	
 	.box {
