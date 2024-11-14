@@ -46,39 +46,40 @@ footer, header, hgroup, menu, nav, section {
 
 	  
 	  }
-	section.carousel button {
-	border:none;
-	border-radius:0;
-	outline:none;
-	width:auto;
-	height: 30vw;
-	/*background:white;*/
-	transform: translateY(7%); /* To ensure perfect vertical alignment */
-	transition:all 0.2s;
-
-	color: black;
-	}
-	section.carousel button:disabled {
-	opacity:0.5;
-	}
-	section.carousel button:not(:disabled):hover {
-	cursor:pointer;
-	opacity:0.85;
-	}
-
-	
-	section.carousel .images {
-	position:relative;
-	flex:1;
-	}
-	section.carousel .images img {
-	display:none;
-	width:100%;
-	height:auto;
-	}
-	section.carousel .images img.current {
-	display:block;
-	}
+	  section.carousel {
+		width:50vw;
+		min-width:300px;
+		max-width:600px;
+		margin:auto;
+		display:flex;
+	  }
+	  section.carousel button {
+		border:none;
+		border-radius:0;
+		outline:none;
+		width:2rem;
+		/*background:white;*/
+		transition:all 0.2s;
+	  }
+	  section.carousel button:disabled {
+		opacity:0.5;
+	  }
+	  section.carousel button:not(:disabled):hover {
+		cursor:pointer;
+		opacity:0.85;
+	  }
+	  section.carousel .images {
+		position:relative;
+		flex:1;
+	  }
+	  section.carousel .images img {
+		display:none;
+		width:100%;
+		height:auto;
+	  }
+	  section.carousel .images img.current {
+		display:block;
+	  }
 
 	
 	.dashboard-container {
